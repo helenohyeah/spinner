@@ -32,29 +32,5 @@ setTimeout(() => {
 }, 1500);
 
 setTimeout(() => {
-  process.stdout.write('\r|   ');
+  process.stdout.write('\r|   \n');
 }, 1700);
-
-setTimeout(() => {
-  process.stdout.write('\n');
-}, 1900);
-
-// const spinner = () => {
-//   const loader = ["|", "/", "-", "\\"];
-//   let timer = 100;
-//   let showLoader = true;
-//   let loaderCount = 0;
-//   while (showLoader === true) {
-//     for (let i = 0; i < loader.length; i++) {
-//       setTimeout(() => {
-//         if (i === loader.length - 1 && loaderCount === 3) process.stdout.write(`\r${loader[i]}\n`);
-//         process.stdout.write(`\r${loader[i]}`);
-//       }, timer);
-//       timer += 200;
-//     }
-//     loaderCount++;
-//     if (loaderCount === 3) showLoader = false;
-//   }
-// }
-
-// spinner();
